@@ -1,0 +1,149 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.opciones p {
+  padding: 8px;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+
+.activo {
+  background-color: #e0f7e9;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+.bloqueado {
+  background-color: #fdecea;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
+
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4F0518;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #32030f;
+}
+
+.flecha {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.flecha img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: auto;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.titulo h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  color: #3C0412;
+  margin: 0;
+}
+
+.flecha {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.flecha img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .titulo h1 {
+    font-size: 14px;
+    padding: 0 40px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .flecha {
+    width: 35px;
+    height: 35px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .flecha img {
+    width: 20px;
+    height: 20px;
+  }
+}
