@@ -67,19 +67,6 @@ button:hover {
   background-color: #32030f;
 }
 
-.flecha {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-
-.flecha img {
-  width: 24px;
-  height: 24px;
-  display: block;
-  margin: auto;
-}
-
 .titulo {
   display: flex;
   align-items: center;
@@ -91,7 +78,7 @@ button:hover {
 .titulo h1 {
   flex: 1;
   text-align: center;
-  font-size: 18px;
+  font-size: clamp(14px, 4vw, 18px);
   color: #3C0412;
   margin: 0;
 }
@@ -113,13 +100,22 @@ button:hover {
 
 @media (max-width: 480px) {
   .container {
-    margin: 20px;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
     padding: 15px;
   }
 
-  .titulo h1 {
-    font-size: 14px;
-    padding: 0 40px;
+  .acciones {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+    padding: 12px;
   }
 
   h2 {
@@ -130,9 +126,9 @@ button:hover {
     font-size: 12px;
   }
 
-  button {
-    font-size: 12px;
-    padding: 8px;
+  .titulo h1 {
+    font-size: clamp(12px, 5vw, 16px);
+    padding: 0 40px;
   }
 
   .flecha {
